@@ -1,0 +1,12 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  margin: 2em;
+}
+

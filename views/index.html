@@ -1,0 +1,49 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <strong>Time Stamp Microservice ⚙</strong>
+    </h1>
+    <h2>
+      <strong>How the API works</strong><br>
+    </h2>
+    <p>
+      This service provides time in both natural and unix formats.<br><br>
+      In the case of natural format, it converts the provided date to a string using the UTC time zone.<br>
+      In the case of a date string, it converts the date to a unix time stamp.<br><br>
+      The unix format (also known as POSIX time or epoch time) denotes the number of seconds that have elapsed since 00:00:00<br>
+      Coordinated Universal Time (UTC), Thursday, 1 January 1970, not counting leap seconds. <br><br>
+      Simply pass the time in a natural or unix format on the tail end of this url!<br><br>
+      Example API Calls<br><br>
+      &nbsp https://grand-aries.glitch.me/June%2011,%202019<br>
+      &nbsp https://grand-aries.glitch.me/1560211200<br><br>
+      If the date string is invalid the api returns a JSON having the structure {"error" : "Invalid Date" }.
+      <br><br>
+      Download the timestamp microservice source code 
+      <a href="https://github.com/junem3ta/NodeJS-APIs/tree/timestamp-microservice" class="ghlink" target="_blank">here</a>.
+    </p>
+  </body>
+</html>
