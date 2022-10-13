@@ -15,5 +15,5 @@ If the date string is invalid the api returns a JSON having the structure
 `{"error" : "Invalid Date" }.`
 
 
-[Github Repo](https://github.com/junem3ta/NodeJS-APIs/tree/timestamp-microservice)
+[Github Repo](https://github.com/nm-daniel/timestamp-microservice)
 
